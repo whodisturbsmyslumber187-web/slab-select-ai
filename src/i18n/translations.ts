@@ -63,6 +63,60 @@ export const translations = {
       commercialDesc: "Elevate your business space with stunning marble installations. Hotels, restaurants, and corporate offices.",
       viewMore: "View More Projects",
     },
+    // Portfolio Section
+    portfolio: {
+      tagline: "Our Portfolio",
+      title1: "Completed",
+      title2: "Projects",
+      subtitle: "Explore our portfolio of completed marble installations across Dubai's most prestigious properties.",
+      filterAll: "All Projects",
+      filterResidential: "Residential",
+      filterCommercial: "Commercial",
+      projects: {
+        villaKitchen: {
+          title: "Luxury Villa Kitchen",
+          description: "A stunning Calacatta Gold marble kitchen with waterfall island and full-height backsplash.",
+          location: "Palm Jumeirah, Dubai",
+          stone: "Calacatta Gold",
+        },
+        penthouseBath: {
+          title: "Penthouse Master Suite",
+          description: "Floor-to-ceiling Statuario marble bathroom with city skyline views.",
+          location: "Downtown Dubai",
+          stone: "Statuario Marble",
+        },
+        officeLobby: {
+          title: "Corporate Headquarters",
+          description: "Dramatic Nero Marquina marble reception and elevator lobbies.",
+          location: "DIFC, Dubai",
+          stone: "Nero Marquina",
+        },
+        restaurant: {
+          title: "Fine Dining Restaurant",
+          description: "Elegant marble bar and dining area with gold accents.",
+          location: "Dubai Marina",
+          stone: "Calacatta Borghini",
+        },
+        hotelReception: {
+          title: "Boutique Hotel",
+          description: "Grand reception with bookmatched feature wall and marble staircase.",
+          location: "Jumeirah, Dubai",
+          stone: "Arabescato Orobico",
+        },
+        villaFlooring: {
+          title: "Mediterranean Estate",
+          description: "Crema Marfil flooring throughout with custom medallion inlays.",
+          location: "Emirates Hills",
+          stone: "Crema Marfil",
+        },
+        spaWellness: {
+          title: "Private Spa & Wellness",
+          description: "Serene Thassos marble steam room and relaxation areas.",
+          location: "Al Barari, Dubai",
+          stone: "Thassos White",
+        },
+      },
+    },
     // Services Section
     services: {
       tagline: "Our Services",
@@ -258,6 +312,60 @@ export const translations = {
       residentialDesc: "حوّل منزلك بأناقة الأحجار الطبيعية الخالدة. من الفيلات الفاخرة إلى الشقق العصرية.",
       commercialDesc: "ارتقِ بمساحة عملك بتركيبات رخامية مذهلة. الفنادق والمطاعم والمكاتب.",
       viewMore: "عرض المزيد من المشاريع",
+    },
+    // Portfolio Section
+    portfolio: {
+      tagline: "معرض أعمالنا",
+      title1: "مشاريع",
+      title2: "منجزة",
+      subtitle: "استكشف معرض أعمالنا من تركيبات الرخام في أرقى عقارات دبي.",
+      filterAll: "جميع المشاريع",
+      filterResidential: "سكني",
+      filterCommercial: "تجاري",
+      projects: {
+        villaKitchen: {
+          title: "مطبخ فيلا فاخرة",
+          description: "مطبخ رخام كالاكاتا الذهبي مع جزيرة شلال وجدار كامل الارتفاع.",
+          location: "نخلة جميرا، دبي",
+          stone: "كالاكاتا الذهبي",
+        },
+        penthouseBath: {
+          title: "جناح البنتهاوس الرئيسي",
+          description: "حمام رخام ستاتواريو من الأرض للسقف مع إطلالة على المدينة.",
+          location: "وسط دبي",
+          stone: "رخام ستاتواريو",
+        },
+        officeLobby: {
+          title: "المقر الرئيسي للشركة",
+          description: "استقبال مثير من رخام نيرو ماركينا وردهات المصاعد.",
+          location: "مركز دبي المالي",
+          stone: "نيرو ماركينا",
+        },
+        restaurant: {
+          title: "مطعم فاخر",
+          description: "بار ومنطقة طعام رخامية أنيقة بلمسات ذهبية.",
+          location: "دبي مارينا",
+          stone: "كالاكاتا بورغيني",
+        },
+        hotelReception: {
+          title: "فندق بوتيكي",
+          description: "استقبال فخم مع جدار مميز ودرج رخامي.",
+          location: "جميرا، دبي",
+          stone: "أرابيسكاتو أوروبيكو",
+        },
+        villaFlooring: {
+          title: "قصر متوسطي",
+          description: "أرضيات كريما مارفيل مع ميداليات مخصصة.",
+          location: "تلال الإمارات",
+          stone: "كريما مارفيل",
+        },
+        spaWellness: {
+          title: "سبا وعافية خاص",
+          description: "غرفة بخار وصالات استرخاء من رخام ثاسوس.",
+          location: "البراري، دبي",
+          stone: "ثاسوس الأبيض",
+        },
+      },
     },
     // Services Section
     services: {
