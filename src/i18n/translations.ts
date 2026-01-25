@@ -169,7 +169,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      description: "Dubai's premier destination for luxury natural stone countertops for residential and commercial spaces. From quarry to installation, we craft distinction.",
+      description: "Oasis Marble Interiors - Dubai's premier destination for luxury natural stone countertops for residential and commercial spaces. From quarry to installation, we craft distinction.",
       quickLinks: "Quick Links",
       stoneTypes: "Stone Types",
       stones: {
@@ -365,7 +365,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      description: "الوجهة الأولى في دبي للأحجار الطبيعية الفاخرة للمساحات السكنية والتجارية. من المحجر إلى التركيب، نصنع التميز.",
+      description: "أواسيس ماربل إنتيريورز - الوجهة الأولى في دبي للأحجار الطبيعية الفاخرة للمساحات السكنية والتجارية. من المحجر إلى التركيب، نصنع التميز.",
       quickLinks: "روابط سريعة",
       stoneTypes: "أنواع الأحجار",
       stones: {
