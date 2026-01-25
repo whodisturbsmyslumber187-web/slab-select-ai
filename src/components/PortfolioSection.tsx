@@ -76,6 +76,28 @@ import artGallery2 from "@/assets/projects/art-gallery-2.jpg";
 import artGallery3 from "@/assets/projects/art-gallery-3.jpg";
 import artGallery4 from "@/assets/projects/art-gallery-4.jpg";
 
+// Project 13: Paris Palace Hotel
+import parisHotel1 from "@/assets/projects/paris-hotel-1.jpg";
+import parisHotel2 from "@/assets/projects/paris-hotel-2.jpg";
+import parisHotel3 from "@/assets/projects/paris-hotel-3.jpg";
+import parisHotel4 from "@/assets/projects/paris-hotel-4.jpg";
+
+// Project 14: London Private Bank
+import londonBank1 from "@/assets/projects/london-bank-1.jpg";
+import londonBank2 from "@/assets/projects/london-bank-2.jpg";
+import londonBank3 from "@/assets/projects/london-bank-3.jpg";
+
+// Project 15: Milan Fashion House
+import milanFashion1 from "@/assets/projects/milan-fashion-1.jpg";
+import milanFashion2 from "@/assets/projects/milan-fashion-2.jpg";
+import milanFashion3 from "@/assets/projects/milan-fashion-3.jpg";
+
+// Project 16: Monaco Yacht Club
+import monacoClub1 from "@/assets/projects/monaco-club-1.jpg";
+import monacoClub2 from "@/assets/projects/monaco-club-2.jpg";
+import monacoClub3 from "@/assets/projects/monaco-club-3.jpg";
+import monacoClub4 from "@/assets/projects/monaco-club-4.jpg";
+
 interface Project {
   id: string;
   images: string[];
@@ -141,6 +163,26 @@ const projects: Project[] = [
   {
     id: "artGallery",
     images: [artGallery1, artGallery2, artGallery3, artGallery4],
+    category: "commercial",
+  },
+  {
+    id: "parisHotel",
+    images: [parisHotel1, parisHotel2, parisHotel3, parisHotel4],
+    category: "commercial",
+  },
+  {
+    id: "londonBank",
+    images: [londonBank1, londonBank2, londonBank3],
+    category: "commercial",
+  },
+  {
+    id: "milanFashion",
+    images: [milanFashion1, milanFashion2, milanFashion3],
+    category: "commercial",
+  },
+  {
+    id: "monacoClub",
+    images: [monacoClub1, monacoClub2, monacoClub3, monacoClub4],
     category: "commercial",
   },
 ];
