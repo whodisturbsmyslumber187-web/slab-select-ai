@@ -9,16 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-sm",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-sm",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-sm",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-sm",
-        ghost: "hover:bg-accent hover:text-accent-foreground rounded-sm",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-md shadow-soft",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-md",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-md",
+        ghost: "hover:bg-accent hover:text-accent-foreground rounded-md",
         link: "text-primary underline-offset-4 hover:underline",
         // Luxury variants
-        gold: "bg-gradient-to-r from-gold to-gold-dark text-primary-foreground font-sans font-semibold tracking-wider uppercase hover:shadow-gold hover:scale-[1.02] rounded-none border-0",
-        goldOutline: "border border-gold text-gold font-sans font-medium tracking-wider uppercase hover:bg-gold hover:text-primary-foreground rounded-none transition-all duration-300",
-        luxury: "bg-transparent border border-foreground/20 text-foreground font-sans font-light tracking-[0.2em] uppercase hover:border-gold hover:text-gold rounded-none",
+        gold: "bg-primary text-primary-foreground font-sans font-semibold tracking-wider uppercase hover:shadow-gold hover:scale-[1.02] rounded-sm border-0",
+        goldOutline: "border-2 border-primary text-primary font-sans font-medium tracking-wider uppercase hover:bg-primary hover:text-primary-foreground rounded-sm transition-all duration-300",
+        luxury: "bg-transparent border border-foreground/30 text-foreground font-sans font-light tracking-[0.15em] uppercase hover:border-primary hover:text-primary rounded-sm",
+        marble: "bg-card text-foreground border border-border font-sans tracking-wide hover:border-primary hover:shadow-soft rounded-sm",
       },
       size: {
         default: "h-10 px-4 py-2",
