@@ -62,16 +62,17 @@ export default {
           light: "hsl(var(--gold-light))",
           dark: "hsl(var(--gold-dark))",
         },
-        marble: {
-          gray: "hsl(var(--marble-gray))",
-          light: "hsl(var(--marble-light))",
+        cream: {
+          DEFAULT: "hsl(var(--cream))",
+          dark: "hsl(var(--cream-dark))",
         },
+        obsidian: "hsl(var(--obsidian))",
         charcoal: "hsl(var(--charcoal))",
       },
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "serif"],
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
-        arabic: ["Cairo", "var(--font-sans)", "sans-serif"],
+        arabic: ["var(--font-arabic)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -87,25 +88,32 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        pulse: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        float: "float 3s ease-in-out infinite",
+        shimmer: "shimmer 2s linear infinite",
+        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       backgroundImage: {
         "gradient-gold": "var(--gradient-gold)",
-        "gradient-marble": "var(--gradient-marble)",
+        "gradient-gold-shine": "var(--gradient-gold-shine)",
+        "gradient-dark": "var(--gradient-dark)",
+        "gradient-cream": "var(--gradient-cream)",
         "gradient-overlay": "var(--gradient-overlay)",
       },
       boxShadow: {
-        soft: "var(--shadow-soft)",
         gold: "var(--shadow-gold)",
         elevated: "var(--shadow-elevated)",
+        soft: "var(--shadow-soft)",
       },
     },
   },
