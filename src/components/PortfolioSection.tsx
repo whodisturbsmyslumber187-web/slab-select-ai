@@ -46,6 +46,36 @@ import spaWellness2 from "@/assets/projects/spa-wellness-2.jpg";
 import spaWellness3 from "@/assets/projects/spa-wellness-3.jpg";
 import spaWellness4 from "@/assets/projects/spa-wellness-4.jpg";
 
+// Project 8: Bank Lobby
+import bankLobby1 from "@/assets/projects/bank-lobby-1.jpg";
+import bankLobby2 from "@/assets/projects/bank-lobby-2.jpg";
+import bankLobby3 from "@/assets/projects/bank-lobby-3.jpg";
+import bankLobby4 from "@/assets/projects/bank-lobby-4.jpg";
+
+// Project 9: Fine Dining 2
+import fineDining1 from "@/assets/projects/fine-dining-1.jpg";
+import fineDining2 from "@/assets/projects/fine-dining-2.jpg";
+import fineDining3 from "@/assets/projects/fine-dining-3.jpg";
+import fineDining4 from "@/assets/projects/fine-dining-4.jpg";
+
+// Project 10: Luxury Retail
+import retailStore1 from "@/assets/projects/retail-store-1.jpg";
+import retailStore2 from "@/assets/projects/retail-store-2.jpg";
+import retailStore3 from "@/assets/projects/retail-store-3.jpg";
+import retailStore4 from "@/assets/projects/retail-store-4.jpg";
+
+// Project 11: Private Members Club
+import membersClub1 from "@/assets/projects/members-club-1.jpg";
+import membersClub2 from "@/assets/projects/members-club-2.jpg";
+import membersClub3 from "@/assets/projects/members-club-3.jpg";
+import membersClub4 from "@/assets/projects/members-club-4.jpg";
+
+// Project 12: Art Gallery
+import artGallery1 from "@/assets/projects/art-gallery-1.jpg";
+import artGallery2 from "@/assets/projects/art-gallery-2.jpg";
+import artGallery3 from "@/assets/projects/art-gallery-3.jpg";
+import artGallery4 from "@/assets/projects/art-gallery-4.jpg";
+
 interface Project {
   id: string;
   images: string[];
@@ -86,6 +116,31 @@ const projects: Project[] = [
   {
     id: "spaWellness",
     images: [spaWellness1, spaWellness2, spaWellness3, spaWellness4],
+    category: "commercial",
+  },
+  {
+    id: "bankLobby",
+    images: [bankLobby1, bankLobby2, bankLobby3, bankLobby4],
+    category: "commercial",
+  },
+  {
+    id: "fineDining",
+    images: [fineDining1, fineDining2, fineDining3, fineDining4],
+    category: "commercial",
+  },
+  {
+    id: "retailStore",
+    images: [retailStore1, retailStore2, retailStore3, retailStore4],
+    category: "commercial",
+  },
+  {
+    id: "membersClub",
+    images: [membersClub1, membersClub2, membersClub3, membersClub4],
+    category: "commercial",
+  },
+  {
+    id: "artGallery",
+    images: [artGallery1, artGallery2, artGallery3, artGallery4],
     category: "commercial",
   },
 ];
