@@ -12,8 +12,12 @@ export const CollectionSection = () => {
   const { t, dir } = useLanguage();
 
   return (
-    <section id="collection" className="py-24 lg:py-32 bg-background marble-texture">
-      <div className="container mx-auto px-6 lg:px-12">
+    <section id="collection" className="py-24 lg:py-32 bg-card relative overflow-hidden">
+      {/* Decorative corner */}
+      <div className="absolute top-0 right-0 w-64 h-64 border-t border-r border-primary/20" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 border-b border-l border-primary/20" />
+
+      <div className="container mx-auto px-6 lg:px-12 relative">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -22,10 +26,14 @@ export const CollectionSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 lg:mb-24"
         >
-          <p className="font-sans text-sm tracking-[0.3em] uppercase text-primary mb-4">
-            {t.collection.tagline}
-          </p>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-charcoal">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="w-16 h-px bg-primary/50" />
+            <p className="font-sans text-sm tracking-[0.3em] uppercase text-primary">
+              {t.collection.tagline}
+            </p>
+            <div className="w-16 h-px bg-primary/50" />
+          </div>
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light">
             {t.collection.title1} <span className="text-gradient-gold">{t.collection.title2}</span>
           </h2>
         </motion.div>
@@ -41,7 +49,7 @@ export const CollectionSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="relative aspect-square overflow-hidden mb-6 bg-card shadow-soft rounded-sm">
+              <div className="relative aspect-square overflow-hidden mb-6 border border-border/50 group-hover:border-primary/50 transition-colors duration-500">
                 <img
                   src={stoneImages[index]}
                   alt={t.collection.stones[key].name}
@@ -49,19 +57,23 @@ export const CollectionSection = () => {
                 />
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/60 transition-colors duration-300 flex items-end p-6 opacity-0 group-hover:opacity-100">
-                  <div className="text-card">
-                    <p className="font-sans text-xs tracking-wider uppercase text-primary">
+                <div className="absolute inset-0 bg-background/0 group-hover:bg-background/80 transition-all duration-500 flex items-end p-6 opacity-0 group-hover:opacity-100">
+                  <div>
+                    <p className="font-sans text-xs tracking-wider uppercase text-primary mb-1">
                       {t.collection.bestFor}
                     </p>
-                    <p className="font-serif text-lg">
+                    <p className="font-serif text-xl text-foreground">
                       {t.collection.stones[key].bestFor}
                     </p>
                   </div>
                 </div>
+
+                {/* Corner accents */}
+                <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
-              <h3 className="font-serif text-xl lg:text-2xl text-charcoal mb-2 group-hover:text-primary transition-colors">
+              <h3 className="font-serif text-xl lg:text-2xl text-foreground mb-2 group-hover:text-primary transition-colors">
                 {t.collection.stones[key].name}
               </h3>
               <p className="font-sans text-sm text-muted-foreground leading-relaxed">
@@ -84,10 +96,10 @@ export const CollectionSection = () => {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 font-sans text-sm tracking-[0.15em] uppercase text-primary hover:text-gold-dark transition-colors"
+            className="inline-flex items-center gap-4 font-sans text-sm tracking-[0.15em] uppercase text-primary hover:text-gold-light transition-colors group"
           >
-            {t.collection.viewInventory}
-            <span className="w-8 h-px bg-primary" />
+            <span>{t.collection.viewInventory}</span>
+            <span className="w-8 h-px bg-primary group-hover:w-12 transition-all duration-300" />
           </a>
         </motion.div>
       </div>

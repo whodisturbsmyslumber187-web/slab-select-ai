@@ -35,14 +35,14 @@ export const Header = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled ? "glass-light shadow-soft py-4" : "bg-transparent py-6"
+          isScrolled ? "glass-dark py-4" : "bg-transparent py-6"
         }`}
       >
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="group">
-              <h1 className="font-serif text-2xl lg:text-3xl font-medium tracking-wide">
+              <h1 className="font-serif text-2xl lg:text-3xl font-light tracking-wider">
                 <span className="text-gradient-gold">Marmo</span>
                 <span className="text-foreground">Luxe</span>
               </h1>
@@ -54,7 +54,7 @@ export const Header = () => {
                 <a
                   key={item.key}
                   href={item.href}
-                  className="font-sans text-sm tracking-[0.1em] uppercase text-foreground/70 hover:text-primary transition-colors duration-300"
+                  className="font-sans text-sm tracking-[0.15em] uppercase text-foreground/70 hover:text-primary transition-colors duration-300"
                 >
                   {t.nav[item.key]}
                 </a>
@@ -66,10 +66,10 @@ export const Header = () => {
               {/* Language Toggle */}
               <button
                 onClick={toggleLanguage}
-                className="flex items-center gap-2 px-3 py-2 text-sm font-sans text-foreground/70 hover:text-primary transition-colors"
+                className="flex items-center gap-2 px-3 py-2 text-sm font-sans text-foreground/70 hover:text-primary transition-colors border border-transparent hover:border-primary/30 rounded-sm"
               >
                 <Globe size={18} />
-                <span>{language === "en" ? "عربي" : "EN"}</span>
+                <span className="font-medium">{language === "en" ? "عربي" : "EN"}</span>
               </button>
 
               <Button variant="gold" size="lg">

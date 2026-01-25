@@ -9,17 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-md shadow-soft",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-md",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-md",
-        ghost: "hover:bg-accent hover:text-accent-foreground rounded-md",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-sm",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-sm",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-sm",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-sm",
+        ghost: "hover:bg-accent hover:text-accent-foreground rounded-sm",
         link: "text-primary underline-offset-4 hover:underline",
         // Luxury variants
-        gold: "bg-primary text-primary-foreground font-sans font-semibold tracking-wider uppercase hover:shadow-gold hover:scale-[1.02] rounded-sm border-0",
-        goldOutline: "border-2 border-primary text-primary font-sans font-medium tracking-wider uppercase hover:bg-primary hover:text-primary-foreground rounded-sm transition-all duration-300",
-        luxury: "bg-transparent border border-foreground/30 text-foreground font-sans font-light tracking-[0.15em] uppercase hover:border-primary hover:text-primary rounded-sm",
-        marble: "bg-card text-foreground border border-border font-sans tracking-wide hover:border-primary hover:shadow-soft rounded-sm",
+        gold: "bg-gradient-to-r from-gold via-gold-light to-gold text-primary-foreground font-sans font-semibold tracking-wider uppercase hover:shadow-gold hover:scale-[1.02] rounded-none border-0 transition-all duration-300",
+        goldOutline: "border-2 border-primary text-primary font-sans font-medium tracking-wider uppercase hover:bg-primary hover:text-primary-foreground rounded-none transition-all duration-300",
+        luxury: "bg-transparent border border-foreground/30 text-foreground font-sans font-light tracking-[0.2em] uppercase hover:border-primary hover:text-primary rounded-none",
+        cream: "bg-cream text-charcoal font-sans font-semibold tracking-wider uppercase hover:bg-cream-dark rounded-none transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
