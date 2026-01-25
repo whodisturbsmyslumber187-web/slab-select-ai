@@ -41,11 +41,50 @@ export const Header = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="#" className="group">
-              <h1 className="font-serif text-2xl lg:text-3xl font-light tracking-wider">
-                <span className="text-gradient-gold">Marmo</span>
-                <span className="text-foreground">Luxe</span>
-              </h1>
+            <a href="#" className="group flex items-center gap-3">
+              {/* Logo Icon - Stylized marble wave/oasis */}
+              <div className="relative w-10 h-10 lg:w-12 lg:h-12">
+                <div className="absolute inset-0 rounded-sm bg-gradient-to-br from-primary via-gold-light to-primary opacity-90" />
+                <div className="absolute inset-[3px] rounded-sm bg-background flex items-center justify-center">
+                  <svg
+                    viewBox="0 0 32 32"
+                    className="w-6 h-6 lg:w-7 lg:h-7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Abstract marble veins / oasis waves */}
+                    <path
+                      d="M4 20C8 14 12 18 16 12C20 6 24 14 28 10"
+                      stroke="url(#goldGradient)"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M4 26C10 20 14 24 20 18C24 14 28 18 28 16"
+                      stroke="url(#goldGradient)"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      opacity="0.6"
+                    />
+                    <defs>
+                      <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="hsl(43, 85%, 55%)" />
+                        <stop offset="50%" stopColor="hsl(43, 70%, 70%)" />
+                        <stop offset="100%" stopColor="hsl(43, 85%, 55%)" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <h1 className="font-serif text-xl lg:text-2xl font-light tracking-wide leading-tight">
+                  <span className="text-gradient-gold">Oasis</span>
+                  <span className="text-foreground/90"> Marble</span>
+                </h1>
+                <span className="text-[10px] lg:text-xs tracking-[0.25em] uppercase text-muted-foreground font-sans">
+                  Interiors
+                </span>
+              </div>
             </a>
 
             {/* Desktop Navigation */}
