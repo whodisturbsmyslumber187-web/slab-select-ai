@@ -76,7 +76,7 @@ export const translations = {
         villaKitchen: {
           title: "Luxury Villa Kitchen",
           description: "A stunning Calacatta Gold marble kitchen with waterfall island and full-height backsplash.",
-          location: "Palm Jumeirah, Dubai",
+          location: "Marbella, Spain",
           stone: "Calacatta Gold",
         },
         penthouseBath: {
@@ -88,7 +88,7 @@ export const translations = {
         officeLobby: {
           title: "Corporate Headquarters",
           description: "Dramatic Nero Marquina marble reception and elevator lobbies.",
-          location: "DIFC, Dubai",
+          location: "Frankfurt, Germany",
           stone: "Nero Marquina",
         },
         restaurant: {
@@ -100,19 +100,19 @@ export const translations = {
         hotelReception: {
           title: "Boutique Hotel",
           description: "Grand reception with bookmatched feature wall and marble staircase.",
-          location: "Jumeirah, Dubai",
+          location: "Barcelona, Spain",
           stone: "Arabescato Orobico",
         },
         villaFlooring: {
           title: "Mediterranean Estate",
           description: "Crema Marfil flooring throughout with custom medallion inlays.",
-          location: "Emirates Hills",
+          location: "Tuscany, Italy",
           stone: "Crema Marfil",
         },
         spaWellness: {
           title: "Private Spa & Wellness",
           description: "Serene Thassos marble steam room and relaxation areas.",
-          location: "Al Barari, Dubai",
+          location: "Geneva, Switzerland",
           stone: "Thassos White",
         },
         bankLobby: {
@@ -123,27 +123,51 @@ export const translations = {
         },
         fineDining: {
           title: "Michelin Star Restaurant",
-          description: "Exquisite chef's table with gold-veined marble counter, private dining room and rooftop bar with Dubai skyline views.",
+          description: "Exquisite chef's table with gold-veined marble counter, private dining room and rooftop bar with skyline views.",
           location: "Burj Khalifa District",
           stone: "Calacatta Gold Kintsugi",
         },
         retailStore: {
           title: "Luxury Flagship Store",
-          description: "High-end fashion boutique, jewelry showroom and luxury car dealership with stunning marble flooring and displays.",
-          location: "Dubai Mall",
+          description: "High-end fashion boutique, jewelry showroom and luxury car dealership with stunning marble flooring.",
+          location: "Vienna, Austria",
           stone: "Carrara & Emperador",
         },
         membersClub: {
           title: "Private Members Club",
-          description: "Exclusive club featuring marble fireplace, dramatic bar counter, cigar lounge and grand staircase entrance.",
-          location: "Downtown Dubai",
+          description: "Exclusive club featuring marble fireplace, dramatic bar counter, cigar lounge and grand staircase.",
+          location: "Zurich, Switzerland",
           stone: "Statuario & Portoro Gold",
         },
         artGallery: {
           title: "Contemporary Art Museum",
-          description: "World-class gallery with polished marble floors, dramatic columns and sculpture pedestals throughout.",
-          location: "Al Quoz Arts District",
+          description: "World-class gallery with polished marble floors, dramatic columns and sculpture pedestals.",
+          location: "Amsterdam, Netherlands",
           stone: "Statuario Venato",
+        },
+        parisHotel: {
+          title: "Paris Palace Hotel",
+          description: "Opulent Art Deco lobby with Calacatta walls, grand staircase, marble fireplace lounge and ornate reception desk.",
+          location: "8th Arrondissement, Paris",
+          stone: "Calacatta Oro & Arabescato",
+        },
+        londonBank: {
+          title: "London Private Bank",
+          description: "Distinguished banking hall with Nero Marquina floors, Verde Guatemala boardroom table and Calacatta client reception.",
+          location: "Mayfair, London",
+          stone: "Nero Marquina & Verde Guatemala",
+        },
+        milanFashion: {
+          title: "Milan Fashion House",
+          description: "Iconic Italian fashion boutique featuring Statuario showroom, Calacatta VIP atelier and Nero Marquina entrance.",
+          location: "Via Montenapoleone, Milan",
+          stone: "Statuario & Nero Marquina",
+        },
+        monacoClub: {
+          title: "Monaco Yacht Club",
+          description: "Exclusive waterfront club with terrace bar, Emperador dining room, marble reception and Portoro Gold private lounge.",
+          location: "Port Hercules, Monaco",
+          stone: "Calacatta & Portoro Gold",
         },
       },
     },
